@@ -13,9 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname + '/public')));
 
-
-
-//Routes idk wtf these aren't working 
+//routes appear to be functioning
 require('./routes/apiRoutes')(app);
 require('./routes/htmlRoutes')(app);
 
