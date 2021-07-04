@@ -11,11 +11,11 @@ const PORT = process.env.PORT || 3030;
 //middleware or as I like to call it Meddle-Ware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(path.join(__dirname + '/public')));
+app.use(express.static('public'));
 
 //routes appear to be functioning
-require('./routes/apiRoutes')(app);
-require('./routes/htmlRoutes')(app);
+//require('./routes/apiRoutes')(app);
+//require('./routes/htmlRoutes')(app);
 
 
 app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
