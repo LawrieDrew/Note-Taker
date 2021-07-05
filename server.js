@@ -1,8 +1,8 @@
-const fs = require('fs');
+//const fs = require('fs');
 const express = require('express');
-const db = require('./db/db.json');
+//const db = require('./db/db.json');
 const path = require('path');
-const uuid = require('uuid');
+//const uuid = require('uuid');
 //not sure if uuidv4 needs to be its own thing?
 
 const app = express();
@@ -13,9 +13,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
-//routes appear to be functioning
-//require('./routes/apiRoutes')(app);
-//require('./routes/htmlRoutes')(app);
+
+require('./routes/apiRoutes')(app);
+require('./routes/htmlRoutes')(app);
 
 
 app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));

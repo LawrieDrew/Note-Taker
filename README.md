@@ -18,12 +18,14 @@ A note taking application that be used to write, save, or delete notes utilizing
 # Installation
 
 The following dependencies must be installed to run application: fs, express, db/db.json/path, and uuid.
+
 # Usage
 
-Used by me in a futile attempt to pass this course.
+Used by me in a futile attempt to pass this course. After much trial and error I could not figure out why my  notes will not save despite my best efforts. All links are working, info can be input into Note Title and Note Text.
 
-# Deployed Link to Heroku
-
+![Screenshot](images/Screenshot1.jpg)
+![Screenshot](images/Screenshot2.jpg)
+![Screenshot](images/Screenshot3.jpg)
 
 
 # License 
